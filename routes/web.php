@@ -6,6 +6,7 @@ use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\backend\HeroSectionController;
 use App\Http\Controllers\backend\AchievementController;
 use App\Http\Controllers\backend\KeyInformationController;
+use App\Http\Controllers\backend\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,9 @@ Route::get('/polices', [FrontendController::class, 'polices'])->name('polices');
 Route::get('/facilities', [FrontendController::class, 'facilities'])->name('facilities');
 Route::get('/tour-request', [FrontendController::class, 'tour_request'])->name('tour_request');
 Route::get('/login', [FrontendController::class, 'login'])->name('login');
+
+Route::get('/apply_online', [StudentController::class, 'index'])->name('applay.online');
+Route::post('/apply_online', [StudentController::class, 'store'])->name('applay.store');
 
 Route::prefix('/admin')->group(function(){
     Route::match(['get', 'post'], 'login',[AdminController::class,'login'])->name('admin.login');

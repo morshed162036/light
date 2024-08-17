@@ -128,6 +128,7 @@
                 <li class=" nav-item"><a href="{{ route('addmissionProcedure') }}"><i class="bx bxs-categories"></i><span class="menu-title">Admission Procedure</span></a></li>
                 <li class=" nav-item"><a href="{{ route('schoolFee') }}"><i class="bx bxs-categories"></i><span class="menu-title">School Fee</span></a></li>
                 <li class=" nav-item"><a href="{{ route('onlinePayment') }}"><i class="bx bxs-categories"></i><span class="menu-title">Online Payment</span></a></li>
+                <li class=" nav-item"><a href="{{ route('applay.online') }}"><i class="bx bxs-categories"></i><span class="menu-title">Apply Online list</span></a></li>
 
 
                 <li class=" navigation-header"><span>Others Section</span>
