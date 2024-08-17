@@ -123,6 +123,20 @@
                     </li>
                 {{-- @endcan --}}
                 {{-- @can('category.index') --}}
+                <li class=" navigation-header"><span>About US Section</span>
+                </li>
+                <li class=" nav-item"><a href="{{ route('adminGallery') }}"><i class="bx bxs-categories"></i><span class="menu-title">Gallery</span></a></li>
+                <li class=" nav-item"><a href="{{ route('campusGallery') }}"><i class="bx bxs-categories"></i><span class="menu-title">Campus Gallery</span></a></li>
+                <li class=" nav-item"><a href="{{ route('choose') }}"><i class="bx bxs-categories"></i><span class="menu-title">Why Choose Us</span></a></li>
+
+
+                <li class=" navigation-header"><span>Admission Section</span>
+                </li>
+                <li class=" nav-item"><a href="{{ route('addmissionProcedure') }}"><i class="bx bxs-categories"></i><span class="menu-title">Admission Procedure</span></a></li>
+                <li class=" nav-item"><a href="{{ route('schoolFee') }}"><i class="bx bxs-categories"></i><span class="menu-title">School Fee</span></a></li>
+                <li class=" nav-item"><a href="{{ route('onlinePayment') }}"><i class="bx bxs-categories"></i><span class="menu-title">Online Payment</span></a></li>
+
+
                 <li class=" navigation-header"><span>Others Section</span>
                 </li>
                     <li class=" nav-item"><a href="{{ route('setting') }}"><i class="bx bxs-categories"></i><span class="menu-title">Basic Settings</span></a>

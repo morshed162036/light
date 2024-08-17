@@ -98,9 +98,13 @@ class FrontendController extends Controller
         return view('frontend.layouts.how_applay');
     }
 
-    public function applay_online()
-    {
-        return view('frontend.applay_online');
+    // public function applay_online()
+    // {
+    //     return view('frontend.applay_online');
+    // }
+    public function applay_online(){
+        $grades = Grade::get()->all();
+        return view('frontend.applay_online', compact('grades'));
     }
 
     public function online_payment()

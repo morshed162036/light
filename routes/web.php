@@ -8,6 +8,7 @@ use App\Http\Controllers\backend\HeroSectionController;
 use App\Http\Controllers\backend\AchievementController;
 use App\Http\Controllers\backend\KeyInformationController;
 use App\Http\Controllers\frontend\FormController;
+use App\Http\Controllers\backend\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +64,12 @@ Route::get('/tour', [FormController::class, 'tour'])->name('tour');
 Route::prefix('/admin')->group(function () {
     Route::match(['get', 'post'], 'login', [AdminController::class, 'login'])->name('admin.login');
     Route::group(['middleware' => ['user']], function () {
+Route::get('/apply_online', [StudentController::class, 'index'])->name('applay.online');
+Route::post('/apply_online', [StudentController::class, 'store'])->name('applay.store');
+
+Route::prefix('/admin')->group(function(){
+    Route::match(['get', 'post'], 'login',[AdminController::class,'login'])->name('admin.login');
+    Route::group(['middleware'=>['user']],function(){
 
         Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
         Route::get('dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
