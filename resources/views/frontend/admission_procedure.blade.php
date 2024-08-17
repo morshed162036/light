@@ -1,16 +1,16 @@
 @extends('frontend.layouts.main')
 
-@section('content')
+@section('content') 
 <section class="addmission_procedure_section">
         <div class="container">
             <div class="row">
                 <div class="principale_massage_title">
-                    <h2>{{ $addmission->title }}</h2>
+                    <h2>A Brief Addmission Procedure</h2>
                 </div>
                 <div class="col-lg-8">
                     <div class="addmission_proceure_left">
                         <div class="addmission_procedure_top">
-                            {{-- <div class="top_brief">
+                            <div class="top_brief">
                                 <p>Once the admission opening date has been decided, Parents can call, email for the
                                     admission information or may come to the School Campus & complete the prescribed
                                     query form regarding admission.</p>
@@ -79,8 +79,7 @@
                                         is appropriate) in at least six subjects including English Language, Bangla
                                         Language and Mathematics – B will be required.</p>
                                 </div>
-                            </div> --}}
-                            {!! $addmission->content !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,7 +93,7 @@
                                         <th class="td_head" scope="col">Age</th>
                                     </tr>
                                 </thead>
-                                {{-- <tbody>
+                                <tbody>
                                     <tr>
                                         <td>Playgroup</td>
                                         <td> 3+ to below 4</td>
@@ -159,14 +158,6 @@
                                         <td class="without_border"> Grade: 12</td>
                                         <td class="without_border"> 18+ to below 19</td>
                                     </tr>
-                                </tbody> --}}
-                                <tbody>
-                                    @foreach ($grades as $grade)
-                                        <tr>
-                                            <td>{{ $grade->class }}</td>
-                                            <td>{{ $grade->age }}</td>
-                                        </tr>
-                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

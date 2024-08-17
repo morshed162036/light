@@ -8,10 +8,18 @@
               <img src="{{asset('images/setting/'.$company->logo)}}" class="img-fluid w-100">
             </div>
             <div class="footer_icon">
+              @if(!empty($company->facebook))
               <a href="{{ $company->facebook }}"><i class="fa-brands fa-facebook-f"></i></a>
+              @endif
+              @if(!empty($company->instagram))
               <a href="{{ $company->instagram }}"><i class="fa-brands fa-instagram"></i></a>
+              @endif
+              @if(!empty($company->linkedin))
               <a href="{{ $company->linkedin }}"><i class="fa-brands fa-linkedin-in"></i></a>
+              @endif
+              @if(!empty($company->youtube))
               <a href="{{ $company->youtube }}"><i class="fa-brands fa-youtube"></i></a>
+              @endif
             </div>
           </div>
         </div>
@@ -228,6 +236,26 @@
               }
             }, 1000);
         </script>
+        <!-- all js include start -->
+     {{--  sweetAlert  --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    @if(Session::has('success'))
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: "{{ session('success') }}",
+        showConfirmButton: false,
+        timer: 1500
+    })
+    @elseif(Session::has('error'))
+    Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Something went wrong!',
+})
+@endif
+</script>
 </body>
 
 </html>

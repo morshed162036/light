@@ -21,10 +21,23 @@
                 </div>
                 <div class="top_social_icon">
                     <div class="social_icon_list">
-                        <a href="{{ $company->facebook }}"><i class="fa-brands fa-facebook-f"></i></a>
+                        @if(!empty($company -> facebook))
+                        <a href="{{ $company->facebook }}"><i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        @endif
+
+                        @if(!empty($company -> instagram))
                         <a href="{{ $company->instagram }}"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="{{ $company->linkedin }}"><i class="fa-brands fa-linkedin-in"></i></a>
+                        @endif
+
+                        @if(!empty($company -> linkedin))
+                        <a href="{{ $company->linkedin }}"><i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        @endif
+
+                        @if(!empty($company -> youtube))
                         <a href="{{ $company->youtube }}"><i class="fa-brands fa-youtube"></i></a>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -101,7 +114,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('polices')}}">Polices</a>
+                        <a class="nav-link" aria-current="page" href="{{route('polices')}}">policies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{route('facilities')}}">Facilities</a>
