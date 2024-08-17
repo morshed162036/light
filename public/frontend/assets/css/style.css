@@ -107,17 +107,19 @@ p {
 }
 
 .cmn_btn {
-    padding: 7px 10px;
+    font-size: 13px !important;
+    padding: 12px 12px;
     border: 1px solid var(--black-color);
     color: var(--white-color);
     background-color: var(--blue-color);
     border-radius: 50px;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cmn_btn_hov {
-    padding: 19px 20px;
+    /* padding: 25px 20px; (Old CSS) */
+    padding: 14px 20px; /* New CSS Add */ 
     color: var(--white-color);
     background-color: var(--blue-color);
     border-radius: 50px;
@@ -705,7 +707,7 @@ button.btn-close {
 
 .wrapper_text {
     position: absolute;
-    width: 90%;
+    width: 80%;
     bottom: -51px;
     z-index: 9999999;
     background-color: var(--blue-color);
@@ -807,15 +809,16 @@ button.btn-close {
 }
 
 .specification_content_text h2 {
+    font-size: 20px !important;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--blue-color);
 }
 
 .specification_content_text p {
     text-align: center;
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .specification_btn {
@@ -849,6 +852,47 @@ button.btn-close {
 /*===================================
             School timing start
  ===================================== */
+/* new css add  */
+.school_timing_table_wrapper table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.school_timing_table_wrapper thead{
+  background-color: var(--blue-color) !important;
+}
+
+.school_timing_table_wrapper th{
+    background-color: var(--blue-color) !important;
+    color: var(--white-color) !important;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.school_timing_table_wrapper tr,td {
+    border: 1px solid var(--blue-color); 
+}
+.school_timing_table_wrapper td{
+    text-align: center;
+    font-size: 18px !important;
+    padding: 15px 0px;
+}
+.school_timing_btn .cmn_btn .cmn_btn_enroll{
+    font-weight: 800;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+}
+.specification_btn a{
+    cursor: pointer;
+}
+.form-select-lg{
+    font-size: 15px !important;
+} 
+
+/* new css end */
+
+
 
 .school_timing h2 {
     text-align: center;
@@ -859,7 +903,8 @@ button.btn-close {
 }
 
 .school_timing_table_wrapper {
-    border: 1px solid var(--sea-color);
+    padding: 40px 32px 40px 32px;
+    border: 1px solid var(--sea-color) !important;
     border-radius: 24px;
     margin: 30px 0px;
 }
@@ -972,7 +1017,7 @@ button.btn-close {
 
 .form_box .form-label,
 .form_box option {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     color: #000000;
 }
@@ -3031,11 +3076,4 @@ Online addmission page End
 #notice_body {
     height: 11rem !important;
     overflow: hidden !important;
-}
-
-.fees_body_img figure img{
-    width: 100% !important;
-}
-.payment_maincontent_img h3{
-    color: var(--blue-color);
 }
