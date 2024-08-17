@@ -1,10 +1,8 @@
 @extends('frontend.layouts.main')
 
-@section('content')
+@section('content') 
 
-@php
-    $id = 0;
-@endphp
+    
     <!-- About tab start -->
     <section class="tab_section">
         <div class="container">
@@ -13,25 +11,12 @@
                 <div class="col-lg-12 col-lg-offset-4 col-md-12 col-sm-12">
                     <div class="tab_button_area">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            @foreach ($tabs as $key => $tab)
-                                @if ($key == 0)
-                                    @php
-                                        $id = $tab->id
-                                    @endphp
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="{{ $tab->id }}" data-bs-toggle="tab"
-                                            data-bs-target="#{{ $tab->id }}-pane" type="button" role="tab"
-                                            aria-controls="{{ $tab->id }}-pane" aria-selected="true">{{ $tab->title }}</button>
-                                    </li>
-                                @else
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="{{ $tab->id }}" data-bs-toggle="tab"
-                                            data-bs-target="#{{ $tab->id }}-pane" type="button" role="tab"
-                                            aria-controls="{{ $tab->id }}-pane" aria-selected="true">{{ $tab->title }}</button>
-                                    </li>
-                                @endif
-                            @endforeach
-                            {{-- <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">LIS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                     data-bs-target="#profile-tab-pane" type="button" role="tab"
                                     aria-controls="profile-tab-pane" aria-selected="false">British Education</button>
@@ -40,7 +25,7 @@
                                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                                     data-bs-target="#contact-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Islamic School</button>
-                            </li> --}}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -49,112 +34,56 @@
                 <div class="col-lg-12">
                     <div class="tab_content_area shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="tab-content" id="myTabContent">
-                            @foreach ($galleries as $key=>$us)
-                                @if ($us->tab->id == $id)
-                                    <div class="tab-pane fade show active" id="{{ $us->tab->id }}-pane" role="tabpanel"
-                                        aria-labelledby="{{ $us->tab->id }}" tabindex="0">
-                                        <div class="tab_image_text_wrapper">
-                                            <div class="tab_image">
-                                                <img src="{{asset('images/choose/'.$us->image)}}" class="img-fluid" style="height: 100px" id="custom_image">
-                                            </div>
-                                            <div class="tab_text">
-                                                {{-- <h3>Why Choose lighthouse??</h3>
-                                                <div class="tab_details_text">
-                                                    <p>At lighthouse International school we offer:</p>
-                                                    <div class="tab_details_order_list">
-                                                        <ul>
-                                                            <li>
-                                                                <p> 1.Superb Quality British education</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>2.Unique Islamic Schooling</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>3.Opportunity to become Hafez & Hafeza and lots more</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>Our young talented students must be prepared with something more than
-                                                        bookish skills as the world we live in shrinks due to technology. They
-                                                        need access to the best learning resources available in order to develop
-                                                        into our country’s intellectual elite – the leaders who will form the
-                                                        country’s future destiny – in the coming years.</p>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>They receive an education at <span class="school_name">Guidance
-                                                            International School</span>that reinforces their heart of awareness
-                                                        through our program and aims to exceed academic expectations through a
-                                                        completely diverse variety of extra-curricular and co-curricular events,
-                                                        as well as additional opportunities to cultivate a culturally and
-                                                        academically diverse mindset toward globalization.</p>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>When you choose Lighthouse International School, you will be confident that
-                                                        your child can achieve our shared objective of becoming global citizens
-                                                        who are mindful of their responsibilities in this life and in the
-                                                        afterlife while still leading a good life as they adapt their religious
-                                                        traditions to everyday life.</p>
-                                                </div> --}}
-                                                {!! $us->content !!}
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="tab_image_text_wrapper">
+                                    <div class="tab_image">
+                                        <img src="{{asset('frontend')}}/assets/images/logo/Light.png" class="img-fluid" style="height: 100px" id="custom_image">
+                                    </div>
+                                    <div class="tab_text">
+                                        <h3>Why Choose lighthouse??</h3>
+                                        <div class="tab_details_text">
+                                            <p>At lighthouse International school we offer:</p>
+                                            <div class="tab_details_order_list">
+                                                <ul>
+                                                    <li>
+                                                        <p> 1.Superb Quality British education</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>2.Unique Islamic Schooling</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>3.Opportunity to become Hafez & Hafeza and lots more</p>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                @else
-                                    <div class="tab-pane fade show" id="{{ $us->tab->id }}-pane" role="tabpanel"
-                                        aria-labelledby="{{ $us->tab->id }}" tabindex="0">
-                                        <div class="tab_image_text_wrapper">
-                                            <div class="tab_image">
-                                                <img src="{{asset('images/choose/'.$us->image)}}" class="img-fluid w-100">
-                                            </div>
-                                            <div class="tab_text">
-                                                {{-- <h3>Why Choose lighthouse??</h3>
-                                                <div class="tab_details_text">
-                                                    <p>At lighthouse International school we offer:</p>
-                                                    <div class="tab_details_order_list">
-                                                        <ul>
-                                                            <li>
-                                                                <p> 1.Superb Quality British education</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>2.Unique Islamic Schooling</p>
-                                                            </li>
-                                                            <li>
-                                                                <p>3.Opportunity to become Hafez & Hafeza and lots more</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>Our young talented students must be prepared with something more than
-                                                        bookish skills as the world we live in shrinks due to technology. They
-                                                        need access to the best learning resources available in order to develop
-                                                        into our country’s intellectual elite – the leaders who will form the
-                                                        country’s future destiny – in the coming years.</p>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>They receive an education at <span class="school_name">Guidance
-                                                            International School</span>that reinforces their heart of awareness
-                                                        through our program and aims to exceed academic expectations through a
-                                                        completely diverse variety of extra-curricular and co-curricular events,
-                                                        as well as additional opportunities to cultivate a culturally and
-                                                        academically diverse mindset toward globalization.</p>
-                                                </div>
-                                                <div class="tab_text_pera">
-                                                    <p>When you choose Lighthouse International School, you will be confident that
-                                                        your child can achieve our shared objective of becoming global citizens
-                                                        who are mindful of their responsibilities in this life and in the
-                                                        afterlife while still leading a good life as they adapt their religious
-                                                        traditions to everyday life.</p>
-                                                </div> --}}
-                                                {!! $us->content !!}
-                                            </div>
+                                        <div class="tab_text_pera">
+                                            <p>Our young talented students must be prepared with something more than
+                                                bookish skills as the world we live in shrinks due to technology. They
+                                                need access to the best learning resources available in order to develop
+                                                into our country’s intellectual elite – the leaders who will form the
+                                                country’s future destiny – in the coming years.</p>
+                                        </div>
+                                        <div class="tab_text_pera">
+                                            <p>They receive an education at <span class="school_name">Guidance
+                                                    International School</span>that reinforces their heart of awareness
+                                                through our program and aims to exceed academic expectations through a
+                                                completely diverse variety of extra-curricular and co-curricular events,
+                                                as well as additional opportunities to cultivate a culturally and
+                                                academically diverse mindset toward globalization.</p>
+                                        </div>
+                                        <div class="tab_text_pera">
+                                            <p>When you choose Lighthouse International School, you will be confident that
+                                                your child can achieve our shared objective of becoming global citizens
+                                                who are mindful of their responsibilities in this life and in the
+                                                afterlife while still leading a good life as they adapt their religious
+                                                traditions to everyday life.</p>
                                         </div>
                                     </div>
-                                @endif
-                            @endforeach
-                            {{-- <div class="tab-pane fade show" id="profile-tab-pane" role="tabpanel"
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile-tab-pane" role="tabpanel"
                                 aria-labelledby="home-tab" tabindex="1">
                                 <div class="tab_image_text_wrapper">
                                     <div class="tab_image">
@@ -233,7 +162,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>

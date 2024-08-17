@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\backend\AcademicCalenderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\FrontendController;
 use App\Http\Controllers\backend\AdminController;
 use App\Http\Controllers\backend\HeroSectionController;
 use App\Http\Controllers\backend\AchievementController;
 use App\Http\Controllers\backend\KeyInformationController;
+use App\Http\Controllers\frontend\FormController;
 use App\Http\Controllers\backend\StudentController;
 
 /*
@@ -54,7 +56,14 @@ Route::get('/polices', [FrontendController::class, 'polices'])->name('polices');
 Route::get('/facilities', [FrontendController::class, 'facilities'])->name('facilities');
 Route::get('/tour-request', [FrontendController::class, 'tour_request'])->name('tour_request');
 Route::get('/login', [FrontendController::class, 'login'])->name('login');
+Route::post('/admission_queries', [FormController::class, 'store'])->name('admission_queries.store');
+Route::get('/admission-queries', [FormController::class, 'index'])->name('admission_query');
+Route::post('/tour', [FormController::class, 'tour_store'])->name('tour.store');
+Route::get('/tour', [FormController::class, 'tour'])->name('tour');
 
+Route::prefix('/admin')->group(function () {
+    Route::match(['get', 'post'], 'login', [AdminController::class, 'login'])->name('admin.login');
+    Route::group(['middleware' => ['user']], function () {
 Route::get('/apply_online', [StudentController::class, 'index'])->name('applay.online');
 Route::post('/apply_online', [StudentController::class, 'store'])->name('applay.store');
 
@@ -62,38 +71,32 @@ Route::prefix('/admin')->group(function(){
     Route::match(['get', 'post'], 'login',[AdminController::class,'login'])->name('admin.login');
     Route::group(['middleware'=>['user']],function(){
 
-        Route::get('logout',[AdminController::class,'logout'])->name('admin.logout');
+        Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
         Route::get('dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-        Route::match(['get', 'post'], 'herosection',[HeroSectionController::class,'heroSection'])->name('heroSection');
-        Route::match(['get', 'post'], 'addmissionprocedure',[AchievementController::class,'addmissionProcedure'])->name('addmissionProcedure');
-        Route::match(['get', 'post'], 'school-timing',[HeroSectionController::class,'schoolTiming'])->name('schoolTiming');
-        Route::match(['get', 'post'], 'counter',[HeroSectionController::class,'counter'])->name('counter');
-        Route::match(['get', 'post'], 'about-us',[HeroSectionController::class,'homeAboutUs'])->name('homeAboutUs');
-        Route::match(['get', 'post'], 'age-specific/{id?}',[HeroSectionController::class,'homeAgeSpecific'])->name('homeAgeSpecific');
-        Route::match(['get', 'post'], 'achievement/{id?}',[AchievementController::class,'achievement'])->name('achievement');
-        Route::match(['get', 'post'], 'grade/{id?}',[AchievementController::class,'grade'])->name('grade');
-        Route::match(['get', 'post'], 'gallery/{id?}',[AchievementController::class,'gallery'])->name('adminGallery');
-        Route::match(['get', 'post'], 'campus/{id?}',[AchievementController::class,'campus'])->name('campusGallery');
-        Route::match(['get', 'post'], 'choose/{id?}',[AchievementController::class,'whyChooseUs'])->name('choose');
-        Route::match(['get', 'post'], 'tab/{id?}',[AchievementController::class,'tab'])->name('tab');
+        Route::match(['get', 'post'], 'herosection', [HeroSectionController::class, 'heroSection'])->name('heroSection');
+        Route::match(['get', 'post'], 'school-timing', [HeroSectionController::class, 'schoolTiming'])->name('schoolTiming');
+        Route::match(['get', 'post'], 'counter', [HeroSectionController::class, 'counter'])->name('counter');
+        Route::match(['get', 'post'], 'about-us', [HeroSectionController::class, 'homeAboutUs'])->name('homeAboutUs');
+        Route::match(['get', 'post'], 'age-specific/{id?}', [HeroSectionController::class, 'homeAgeSpecific'])->name('homeAgeSpecific');
+        Route::match(['get', 'post'], 'achievement/{id?}', [AchievementController::class, 'achievement'])->name('achievement');
+        Route::match(['get', 'post'], 'branch/{id?}', [AchievementController::class, 'branch'])->name('branch');
+        Route::match(['get', 'post'], 'facilities', [AchievementController::class, 'facility'])->name('facility');
+        Route::match(['get', 'post'], 'polices', [AchievementController::class, 'policy'])->name('policy');
+        Route::post('policy-upload', [KeyInformationController::class, 'policyUpload'])->name('policy.upload');
+        Route::match(['get', 'post'], 'camps/{id?}', [KeyInformationController::class, 'camps'])->name('camps');
+        Route::post('camp-upload', [KeyInformationController::class, 'campUpload'])->name('camp.upload');
+        Route::match(['get', 'post'], 'event-notice-news/{id?}', [KeyInformationController::class, 'eventNoticeNews'])->name('eventNoticeNews');
+        Route::post('event-upload', [KeyInformationController::class, 'eventUpload'])->name('event.upload');
+        Route::match(['get', 'post'], 'transport-cafeteria-book/{id?}', [KeyInformationController::class, 'transportCafeteriaBook'])->name('transportCafeteriaBook');
+        Route::match(['get', 'post'], 'setting', [HeroSectionController::class, 'setting'])->name('setting');
+        Route::match(['get', 'post'], 'slot/{id?}', [FormController::class, 'slot'])->name('slot');
+        Route::get('/academic-calenders', [AcademicCalenderController::class, 'index'])->name('academic_calenders');
+        Route::get('/academic-calenders/create', [AcademicCalenderController::class, 'create'])->name('academic_calender.create');
+        Route::post('/academic-calenders', [AcademicCalenderController::class, 'store'])->name('academic_calender.store');
+        Route::get('/academic-calenders/edit{id}', [AcademicCalenderController::class, 'edit'])->name('academic_calender.edit');
+        Route::put('/academic-calenders/update{id}', [AcademicCalenderController::class, 'update'])->name('academic_calender.update');
+        Route::delete('/academic-calenders/{id}', [AcademicCalenderController::class, 'destroy'])->name('academic_calender.destroy');
 
-        Route::match(['get', 'post'], 'branch/{id?}',[AchievementController::class,'branch'])->name('branch');
-        Route::match(['get', 'post'], 'facilities',[AchievementController::class,'facility'])->name('facility');
-        Route::match(['get', 'post'], 'polices',[AchievementController::class,'policy'])->name('policy');
-        Route::post('policy-upload', [KeyInformationController::class,'policyUpload'])->name('policy.upload');
-        Route::match(['get', 'post'], 'schoolfee',[AchievementController::class,'schoolFee'])->name('schoolFee');
-        Route::post('school-upload', [AchievementController::class,'feeUpload'])->name('fee.upload');
-
-        Route::match(['get', 'post'], 'online-payment',[AchievementController::class,'onlinePayment'])->name('onlinePayment');
-        Route::post('payment-upload', [AchievementController::class,'paymentUpload'])->name('payment.upload');
-
-        Route::match(['get', 'post'], 'camps/{id?}',[KeyInformationController::class,'camps'])->name('camps');
-        Route::post('camp-upload', [KeyInformationController::class,'campUpload'])->name('camp.upload');
-        Route::match(['get', 'post'], 'event-notice-news/{id?}',[KeyInformationController::class,'eventNoticeNews'])->name('eventNoticeNews');
-        Route::post('event-upload', [KeyInformationController::class,'eventUpload'])->name('event.upload');
-        Route::match(['get', 'post'], 'transport-cafeteria-book/{id?}',[KeyInformationController::class,'transportCafeteriaBook'])->name('transportCafeteriaBook');
-        Route::match(['get', 'post'], 'setting',[HeroSectionController::class,'setting'])->name('setting');
-
+        // Route::delete('/academic-calenders/delete{id}', [AcademicCalenderController::class, 'delete'])->name('academic_calender.destroy');
     });
-
 });
