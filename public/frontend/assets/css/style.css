@@ -1,0 +1,3041 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+/*==============
+    COMMON CSS
+===============*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--black-color);
+}
+
+/* body {
+    position: relative;
+} */
+
+/* common css end */
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    border: none !important;
+}
+
+.nav-tabs .nav-link {
+    border: none !important;
+}
+
+:root {
+    --blue-color: #050C9C;
+    --white-color: #ffffff;
+    --orange-color: #F48020;
+    --black-color: #000000;
+    --lightblue-color: #3572EF;
+    --sea-color: #3ABEF9;
+    --space--color: #A7E6FF;
+}
+
+/* ===============================
+  header start
+  ================================= */
+#custom_image {
+    margin: 100px;
+    margin-top: 300px;
+}
+
+
+/* .top_heading_left {} */
+
+.school_logo img {
+    height: 100px;
+    width: 325px;
+}
+
+.top_head_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_sec {
+    display: flex;
+    text-align: center;
+}
+
+.social_icon_list a {
+    margin-left: 5px;
+}
+
+.cmn_btn {
+    padding: 7px 10px;
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 50px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.cmn_btn_hov {
+    padding: 19px 20px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 50px;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+.cmn_btn_hov:hover {
+    background-color: var(--black-color);
+}
+
+.banner_rating i {
+    color: #F48020;
+}
+
+
+.social_icon_list i {
+    margin-left: 10px;
+    color: var(--blue-color);
+}
+
+.arrow-btn {
+    padding: 0px 5px;
+}
+
+.top_head_button {
+    padding: 50px 0px;
+    width: 20%;
+}
+
+.top_social_icon {
+    padding: 50px 0px;
+    width: 20%;
+}
+
+.top_logo {
+    width: 60%;
+    padding: 20px 0px;
+}
+
+.navbar-expand {
+    background-color: #4c2c7f !important;
+}
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    text-align: center;
+    margin-left: 80px;
+}
+
+.new_nav {
+    background-color: var(--blue-color);
+}
+
+.nav-item .nav-link,
+.active {
+    color: var(--white-color) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.navbar .nav-item .dropdown {
+    display: none;
+}
+
+.navbar .nav-link:hover .dropdown-menu {
+    visibility: visible;
+}
+
+.nav-item {
+    margin-right: 6px;
+}
+
+.offcanvas_btn {
+    font-size: 20px;
+    color: var(--white-color);
+    margin-left: 15px;
+
+}
+
+.dropdown-menu {
+    padding: 5px 8px !important;
+    margin-bottom: 10px !important;
+
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid var(--blue-color);
+    padding: 10px 0px;
+    /* margin-bottom: 20px; */
+}
+
+.dropdown-menu li a {
+    font-size: 15px;
+    color: var(--blue-color);
+    transition: .3s linear;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--black-color);
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0.90 !important;
+}
+
+button.btn-close {
+    border: 3px solid black;
+    border-radius: 20px;
+    font-weight: 800;
+}
+
+/* custom styles for dropdown menu start */
+
+/* Custom styles for the dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.dropdown-item {
+    padding: 0px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.without_border {
+    border: none !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* custom style for dropdown menu end */
+
+
+/* =======================
+      sidebar menu start
+=========================== */
+
+.sidebar_menu {
+    margin-top: 40px;
+}
+
+.offcanvas_main_menu li {
+    list-style: none;
+    position: relative;
+}
+
+.offcanvas_main_menu li a {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    color: #000000;
+    transition: .3s linear;
+}
+
+.offcanvas_main_menu .sub-menu li a {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.offcanvas_main_menu .sub-menu li i {
+    margin-right: 5px;
+}
+
+
+
+.offcanvas_main_menu li a:hover {
+    color: var(--blue-color);
+}
+
+.offcanvas_main_menu li span.menu-expand {
+    position: absolute;
+    right: 0;
+}
+
+
+.sidebar_btn {
+    margin: 20px 0px;
+}
+
+.contact_icon i {
+    padding: 5px 5px 10px 0px;
+    color: var(--orange-color);
+    font-size: 24px;
+}
+
+.icon_number {
+    display: flex;
+}
+
+.contact_text {
+    margin-left: 5px;
+}
+
+.contact_text a {
+    color: red;
+}
+
+.contact_wrapper li {
+    margin: 10px 0px;
+}
+
+.contact_text p {
+    color: var(--blue-color);
+}
+
+.side_btn {
+    padding: 15px 20px;
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 50px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+/* =======================
+      sidebar menu end
+=========================== */
+
+/* ===========================
+      Banner start
+ ============================== */
+
+.banner_section {
+    background-repeat: no-repeat !important;
+    background-position-x: right !important;
+    background-position-y: top !important;
+    background-size: contain !important;
+    /* height: 100VH !important; */
+    /* position: relative; */
+}
+
+.banner_left_container {
+    margin-top: 130px;
+}
+
+.banner_middle_text {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.banner_middle_text h2 {
+    font-size: 64px;
+    letter-spacing: -1;
+    font-size: 600;
+    color: var(--blue-color);
+}
+
+.banner_paragraph {
+    margin: 20px 0px;
+}
+
+.banner_top_text p {
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.banner_rating {
+    margin-right: 150px;
+}
+
+.banner_paragraph p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.button_rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_rating {
+    padding: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+
+.banner_phone_number {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.banner_icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+
+}
+
+
+.banner_icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.icon_number p {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: var(--blue-color);
+    font-size: 18px;
+}
+
+
+
+
+.up_image img {
+    max-width: 350px;
+    border-radius: 24px;
+}
+
+.up_image img:hover {
+    transform: translate(1px, -1px) rotate(1deg);
+    cursor: pointer;
+}
+
+.down_image img {
+    max-width: 350px;
+    border-radius: 24px;
+}
+
+.down_image img:hover {
+    transform: translate(1px, -1px) rotate(1deg);
+    cursor: pointer;
+}
+
+.image_wrapper {
+    margin-top: 250px;
+    margin-left: 90px;
+}
+
+.image_wrapper {
+    position: relative;
+}
+
+.down_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* ===========================
+      Banner End
+=============================== */
+
+
+/* ===========================
+      About section start
+=============================== */
+.about_us {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.about_title {
+    margin-bottom: 30px;
+}
+
+.about_title h2 {
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.about_heading {
+    margin-bottom: 30px;
+}
+
+.about_heading h2 {
+    font-size: 48px;
+    color: var(--blue-color);
+    letter-spacing: -1;
+    font-weight: 800;
+}
+
+.about_peragraph {
+    margin-bottom: 40px;
+}
+
+.about_peragraph p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.transparent_btn {
+    padding: 15px 20px;
+    border: 1px solid var(--blue-color);
+    color: var(--lightblue-color);
+    background-color: transparent;
+    border-radius: 50px;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+.transparent_btn:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.about_right {
+    padding-left: 60px;
+}
+
+.about_left_image img {
+    cursor: pointer;
+    margin-top: 100px;
+    transition: transform 2s;
+}
+
+
+.about_left_image img:hover {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* ===========================
+      About section end
+=============================== */
+
+/* =============================
+      counter section star
+================================ */
+
+.counter_section {
+    background-size: cover !important;
+    background-repeat: no-repeat !;
+    width: 100% !important;
+    background-position: center !important;
+    background-attachment: fixed;
+    z-index: 999999;
+    object-fit: scale-down;
+
+}
+
+.background_overlay {
+    background-color: var(--black-color);
+    opacity: 0.7;
+    transition: background;
+    width: 100%;
+
+}
+
+.counter_heading {
+    margin-top: 100px;
+}
+
+.counter_heading h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.counter_heading h2::before {
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    width: 50px;
+    height: 3px;
+    background-color: var(--orange-color);
+}
+
+.counter_heading h2::after {
+    position: absolute;
+    margin-right: 10px;
+    bottom: 0;
+    content: " ";
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue-color);
+    left: 60px;
+}
+
+.counter_heading p {
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.counter_heading {
+    padding-top: 60px;
+}
+
+.counter_sec {
+    margin-bottom: 100px;
+}
+
+.counter_sec {
+    text-align: center;
+}
+
+.counter_sec i {
+    font-size: 40px;
+    color: var(--white-color);
+
+
+}
+
+.counter_sec span {
+    font-size: 30px;
+    color: var(--white-color);
+    font-weight: 800;
+    padding: 20px 0px;
+}
+
+.counter_heading h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.counter_heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--white-color);
+}
+
+.counter_sec p {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--white-color);
+}
+
+/* .horigontal_column{
+    background-color: var(--blue-color);
+    z-index: 99999999;
+} */
+
+.wrapper_text p {
+    font-size: 30px;
+    color: var(--white-color);
+    padding: 20px 20px;
+}
+
+.wrapper_btn {
+    padding: 20px 20px;
+}
+
+.counter_section {
+    position: relative;
+}
+
+.wrapper_text {
+    position: absolute;
+    width: 90%;
+    bottom: -51px;
+    z-index: 9999999;
+    background-color: var(--blue-color);
+}
+
+.box_btn {
+    padding: 15px 20px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.wrapbb {
+    margin: 20px 0px;
+}
+
+.wrap_pera p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ================================
+      Counter section end
+=================================== */
+
+
+
+/* ==================================
+     Age specification start
+=====================================*/
+
+.age_specification_top {
+    text-align: center;
+    margin: 50px 0px;
+    padding-bottom: 50px;
+}
+
+.age_specification_top h3 {
+    color: var(--blue-color);
+    font-weight: 600;
+}
+
+.age_specification_top h2 {
+    color: var(--black-color);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.age_specification {
+    margin: 100px 0px;
+
+}
+
+.age_specification_content {
+    border: 1px solid var(--space--color);
+    border-radius: 24px;
+    position: relative;
+}
+
+.specification_content_image {
+    padding-right: 30px;
+}
+
+.specification_content_image img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    margin-top: 10px;
+    padding-right: 30px;
+    z-index: 999999;
+}
+
+.specification_content_image img:hover {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.specification_content_text {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0px 30px;
+    height: 585px;
+}
+
+.specification_content_text h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.specification_content_text p {
+    text-align: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.specification_btn {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.auto_height {
+    height: 250px;
+}
+
+.without_style_btn {
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s linear;
+    color: var(--blue-color);
+}
+
+.without_style_btn span {
+    padding: 0px 5px;
+}
+
+/* .without_style_btn:hover{
+    color: var(--space--color);
+} */
+/* ================================
+           Age section end
+ ================================== */
+
+
+/*===================================
+            School timing start
+ ===================================== */
+
+.school_timing h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue-color);
+    font-weight: 800;
+}
+
+.school_timing_table_wrapper {
+    border: 1px solid var(--sea-color);
+    border-radius: 24px;
+    margin: 30px 0px;
+}
+
+.school_table_content {
+    margin: 0px 30px;
+}
+
+.school_table_head {
+    margin: 40px 0px;
+
+}
+
+.school_table_head h2 {
+    font-weight: 600;
+    color: var(--black-color);
+
+}
+
+.custom_table_header {
+    background-color: var(--blue-color);
+}
+
+.td_head {
+    background-color: var(--blue-color) !important;
+    color: var(--white-color) !important;
+}
+
+.table-bordered {
+    border: 1px solid var(--space--color) !important;
+}
+
+.school_timing_note p {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+
+.school_timing_btn {
+    margin-bottom: 30px;
+}
+
+/*====================================
+  School Timing end
+  =====================================*/
+
+
+/*=====================================
+   news and media section start
+   ======================================*/
+.news_media {
+    margin: 100px 0px;
+}
+
+.left_news_media {
+    height: 500px;
+    width: 500px;
+    background-color: var(--space--color);
+    position: relative;
+    border-radius: 15px;
+}
+
+.slider_content img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid var(--sea-color);
+    border-radius: 15px;
+}
+
+
+.slider_content {
+    height: 100%;
+    width: 500px;
+    /* border: 1px solid var(--sea-color); */
+}
+
+.floating_blog .counter_heading h2,
+.media .counter_heading h2,
+.form_content .counter_heading h2 {
+    color: var(--blue-color);
+}
+
+.floating_blog .counter_heading,
+.media .counter_heading,
+.form_content .counter_heading {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.floating_blog {
+    margin: 30px 0px;
+}
+
+.content_list li,
+.media_image_content {
+    margin: 15px 0px;
+}
+
+.content_list p,
+.media_text P {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.form_box {
+    margin: 30px 0px;
+}
+
+.form_box .form-label,
+.form_box option {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.from_btn button {
+    background-color: var(--blue-color);
+}
+
+/*=======================================
+        news and media section end
+  =========================================*/
+
+/*=======================================
+       footer seection start
+   ========================================*/
+
+.footer_section {
+    background-color: var(--blue-color);
+}
+
+.footer_logo {
+    margin: 30px 0px;
+}
+
+.footer_icon {
+    margin: 30px 0px;
+}
+
+.footer_icon a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.footer_icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer_singel_part_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer_singel_part_title h5 {
+    color: var(--white-color);
+}
+
+.footer_singel_link {
+    color: var(--white-color);
+}
+
+.footer_singel_link ul li p {
+    color: var(--white-color);
+}
+
+.footer_singel_part_title h5 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.footer_singel_part_title p {
+    color: var(--white-color);
+}
+
+.bottom_foter {
+    border-top: 1px solid var(--white-color);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.copywrite_text p {
+    color: var(--white-color);
+}
+
+.footer_condiion {
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+}
+
+.footer_condiion span {
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.footer_condiion span a {
+    margin: 0px 5px;
+}
+
+.copywrite_text {
+    margin: 20px 0px;
+}
+
+.footer_condiion {
+    margin: 20px 0px;
+}
+
+/* =================================
+    footer section end
+==================================== */
+
+/* ================================
+      reminder start
+===================================== */
+.reminder {
+    background-color: var(--blue-color);
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+.reminder_header h2,
+.reminder_footer h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+.reminder_body {
+    border: 1px solid var(--white-color);
+    margin: 10px 20px;
+}
+
+.countdown_box {
+    padding: 0px 5px;
+}
+
+.time_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.countdown_title {
+    font-size: 15PX;
+}
+
+.countdown_number {
+    display: block;
+    font-weight: 800;
+    font-size: 30PX;
+    color: var(--white-color);
+}
+
+.countdown_title {
+    font-size: 15px;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.reminder {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    z-index: 999999999;
+
+}
+
+/* =================================
+        reminder end
+==================================== */
+
+/*========================
+ about page css start
+ =========================*/
+
+/*====================
+  mission&vission start
+  ======================*/
+.mission_title {
+    background-color: var(--blue-color);
+    margin: 30px 0px;
+    position: relative;
+}
+
+.mission_title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white-color);
+    padding: 25px 0px;
+}
+
+.flipcard {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #ecf0f1;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    transition: transform 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.face-back {
+    transform: rotateY(180deg);
+    background-color: var(--blue-color);
+}
+
+.flipcard:hover .face-front {
+    transform: rotateY(-180deg);
+}
+
+.flipcard:hover .face-back {
+    transform: rotateY(0deg);
+}
+
+.icon_image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.icon_text {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.flip_text_wrapper {
+    margin-top: 50px;
+    padding: 0px 50px;
+}
+
+.flip_text_wrapper p {
+    text-align: justify;
+    color: var(--white-color);
+    margin-top: 20px;
+}
+
+.flip_box_section {
+    margin-bottom: 30px;
+}
+
+/*====================
+  mission&vission end
+  ======================*/
+
+/* =======================
+        tab button start
+  =========================== */
+.tab_content_area {
+    margin-left: 30px;
+
+}
+
+.tab_text {
+    margin-top: 150px;
+}
+
+button#home-tab {
+    background: var(--white-color);
+    margin-left: 150px;
+}
+
+ul#myTab {
+    position: absolute;
+    top: 96px;
+}
+
+.tab_button_area ul li button {
+    background-color: #f7f7f7;
+    color: var(--blue-color) !important;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.tab_button_area .nav-link {
+    color: var(--blue-color) !important;
+    padding: 20px 25px;
+    border-block-style: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none !important;
+    border-style: none !important;
+    color: #000000 !important;
+}
+
+.tab_button_area .nav-item {
+    margin: 0px !important;
+}
+
+.tab_button_area .nav-tabs {
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 400px;
+}
+
+.tab_section {
+    position: relative;
+}
+
+.tab_text h3 {
+    color: var(--blue-color);
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.tab_details_order_list ul li p {
+    margin: 0px;
+    font-weight: 600;
+}
+
+.tab_text_pera {
+    padding: 10px 0px;
+}
+
+.school_name {
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.tab_image_text_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab_image img {
+    height: 100%;
+}
+
+.tab_image {
+    width: 40%;
+}
+
+.tab_text {
+    width: 60%;
+    margin-left: 50px;
+}
+
+/* ===============================
+       tab button end
+================================== */
+
+/* ===========================
+        principle massage start
+=============================== */
+
+.Principale_massage_section {
+    margin: 100px 0px;
+}
+
+.principale_massage_title {
+    text-align: center;
+}
+
+.principale_massage_title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.principale_massage_title h2::before {
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    width: 80px;
+    height: 5px;
+    background-color: var(--black-color);
+    left: 540px;
+}
+
+.principale_massage_title h2::after {
+    position: absolute;
+    bottom: 0;
+    content: " ";
+    width: 80px;
+    height: 5px;
+    background-color: var(--blue-color);
+    right: 530px;
+}
+
+.principale_speach h2 {
+    font-size: 16px;
+    color: var(--blue-color);
+    font-weight: 800;
+}
+
+.principale_speach_pera {
+    margin: 20px 0px;
+}
+
+.principale_speach_pera {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.principale_image img {
+    width: 420px;
+    height: 500px;
+    border: 2px solid var(--blue-color);
+}
+
+.principale_image_part {
+    margin-left: 60px;
+}
+
+.principale_name h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin-top: 15px;
+}
+
+.principale_name p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.principale_name h5 {
+    font-size: 15px;
+    margin-top: -15px;
+    color: var(--blue-color);
+}
+
+.main_teaching_team {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+}
+
+/* ============================
+      principale masseage end
+================================ */
+
+/* ============================
+      Our Team start
+================================ */
+.main_teaching_team {
+    display: flex;
+    justify-content: center;
+}
+
+.member_image {
+    margin-top: 50px;
+}
+
+.member_image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.teacher_info {
+    height: 70px;
+}
+
+.teacher_info {
+    margin-top: 10px;
+}
+
+.teacher_info h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.teacher_info p {
+    font-size: 12PX;
+}
+
+.main_teaching_team {
+    margin: 30PX 0PX;
+}
+
+.back_teacher_info {
+    margin: 150px 20px;
+}
+
+.back_teacher_info h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.back_teacher_info p {
+    font-size: 12PX;
+    color: var(--white-color);
+}
+
+.department_title {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.department_title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.common_teaching_team {
+    padding-bottom: 50px;
+}
+
+.common_teaching_team .flipcard {
+    margin: 10px 0px;
+}
+
+/* ============================
+      Our Team End
+================================ */
+
+
+
+
+/* =======================
+ about page css end
+ ==========================*/
+
+/* =======================
+ curriculam_page start
+ ===========================*/
+.curriculam_description_title p {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--blue-color);
+    color: var(--blue-color);
+
+}
+
+.elemonteory_list {
+    margin-left: 50px;
+}
+
+.elemonteory_list p {
+    text-align: justify;
+}
+
+.elemonteory_list ul {
+    list-style: show;
+}
+
+.common_pera {
+    margin: 30px 0px;
+}
+
+.common_pera h5 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--blue-color);
+    padding-bottom: 15px;
+}
+
+.elementory_section h5 {
+    color: var(--blue-color);
+}
+
+.curriculam_logo_top_text p {
+    text-align: center;
+}
+
+.curriculam_logo_text {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculam_box {
+    margin: 0px 10px;
+}
+
+/* =======================
+ curriculam_page end
+ ===========================*/
+
+/* ===========================
+       campus page start
+=================================== */
+.tour_from_wrapper {
+    margin-top: 50px;
+}
+
+.custom_campus_left {
+    margin-top: 50px;
+}
+
+.lft_campus_heading {
+    background-color: var(--blue-color);
+    padding: 20px;
+}
+
+.lft_campus_heading p,
+h3,
+h5 {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.under_campus img {
+    border: 1px solid var(--blue-color);
+}
+
+.form_inner_title {
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.form_inner_title h2 {
+    font-size: 20px;
+    color: var(--blue-color);
+    font-weight: 600;
+}
+
+
+/*=========================
+ recapcha start
+ =======================*/
+
+.captcha {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #4c4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .captcha {
+        flex-direction: column;
+    }
+
+    .text {
+        margin: .5em !important;
+        text-align: center;
+    }
+
+    .logo {
+        align-self: center !important;
+    }
+
+    .spinner {
+        margin: 2em .5em .5em .5em !important;
+    }
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.spinner {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    margin: 2em 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input[type="checkbox"]+.checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fcfcfc;
+    border: 2.5px solid #c3c3c3;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+.checkmark span {
+    content: '';
+    position: relative;
+    /*
+	position:absolute;
+	border-bottom:3px solid;
+	border-right:3px solid;
+	border-color:#029f56;*/
+    margin-top: -3px;
+    transform: rotate(45deg);
+    width: .75em;
+    height: 1.2em;
+    opacity: 0;
+}
+
+input[type="checkbox"]+.checkmark>span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #029f56;
+}
+
+input[type="checkbox"]+.checkmark>span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: #029f56;
+}
+
+input[type="checkbox"]:checked+.checkmark {
+    animation: 2s spin forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span {
+    animation: 1s fadein 1.9s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:after {
+    animation: .3s bottomslide 2s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:before {
+    animation: .5s rightslide 2.2s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bottomslide {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes rightslide {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    align-self: flex-end;
+    margin: 0.5em 1em;
+}
+
+.logo img {
+    height: 2em;
+    width: 2em;
+}
+
+.logo p {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+    margin: .4em 0 .2em 0;
+}
+
+.logo small {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: .8em;
+}
+
+@keyframes spin {
+    10% {
+        width: 0;
+        height: 0;
+        border-width: 6px;
+    }
+
+    30% {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        border-width: 1em;
+        transform: rotate(0deg);
+        border-color: rgb(199, 218, 245);
+    }
+
+    50% {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        border-width: 4px;
+        border-color: rgb(199, 218, 245);
+        border-right-color: rgb(89, 152, 239);
+    }
+
+    70% {
+        border-width: 4px;
+        border-color: rgb(199, 218, 245);
+        border-right-color: rgb(89, 152, 239);
+    }
+
+    90% {
+        border-width: 4px;
+    }
+
+    100% {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        transform: rotate(720deg);
+        border-color: transparent;
+    }
+}
+
+::selection {
+    background-color: transparent;
+    color: teal;
+}
+
+::-moz-selection {
+    background-color: transparent;
+    color: teal;
+}
+
+/* =====================
+recapcha end
+=========================*/
+
+.tour_from_wrapper {
+    border-radius: 24px;
+}
+
+
+/* cumpus slide */
+
+
+/* mixitup_section start */
+
+.mixitup_body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mixitup_single_image {
+    margin: 10px 5px;
+}
+
+
+.mixitup_text {
+    margin: 20px 0px;
+}
+
+.mixitup_single_image img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+.mixitup_text p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.mixitup_btn button {
+    padding: 10px 15px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: all .3s linear;
+}
+
+.mixitup_btn button:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+/* mixitup section end */
+
+
+/* ===========================
+       campus page end
+=================================== */
+
+
+/* ===========================
+   event page start
+=============================== */
+
+.event_section_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 380px !important;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.event_overlay_text h2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.event_text_lft {
+    text-align: center;
+    border-bottom: 1px solid var(--blue-color);
+    width: 100%;
+}
+
+.event_card_text {
+    padding: 20px 0px;
+}
+
+.event_text_lft h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--blue-color);
+}
+
+.event_text_lft p {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--black-color);
+}
+
+.event_text_right p {
+    font-size: 18px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.evnt_icon_text {
+    margin-top: -12px;
+}
+
+.evnt_icon_text span {
+    color: var(--blue-color);
+    font-size: 15px;
+}
+
+.event_card_design {
+    margin: 10px 0px;
+}
+
+/* ============================
+   event page end
+================================ */
+
+
+/*==================================
+      Gallery Page start
+====================================*/
+
+.hero_section {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 370px !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+.hero_section_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.hero_section_overlay p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -20%);
+    font-size: 45px;
+    color: var(--white-color);
+    font-weight: 800;
+}
+
+.breadcum_gallery_page {
+    margin-top: 30px;
+}
+
+.breadcrumb-item {
+    font-size: 20px;
+}
+
+.breadcum_gallery_page .breadcrumb-item a {
+    color: var(--black-color);
+    transition: all .3s linear;
+}
+
+.breadcum_gallery_page .breadcrumb-item a:hover {
+    color: var(--blue-color);
+}
+
+li.breadcrumb-item.active {
+    color: var(--blue-color) !important;
+}
+
+li.breadcrumb-item.active:hover {
+    color: var(--black-color) !important;
+}
+
+.gallery_inner_title {
+    margin-top: 100px;
+}
+
+.gallery_inner_title h5 {
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.gallery_inner_title h3 {
+    font-size: 30px;
+    color: var(--blue-color);
+    font-weight: 800;
+}
+
+.gallery_page_singel_image {
+    position: relative;
+    margin: 15px 0px;
+}
+
+.gallery_page_singel_image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.225);
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.gallery_page_singel_image_overlay P {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.gallery_page_singel_image:hover .gallery_page_singel_image_overlay {
+    opacity: 1;
+}
+
+/*==================================
+      Gallery Page start
+====================================*/
+
+/*==================================
+    Academic calender page start
+====================================*/
+.calender_left_side {
+    margin-bottom: 80PX;
+}
+
+.calender_right_side_content {
+    padding: 60px 60px;
+}
+
+.admission_content_heading,
+.admission_content_address .addmission_content_openingHour .admission_content_campus {
+    margin: 20px 0px;
+}
+
+.admission_content_address p,
+.addmission_content_openingHour p {
+    font-size: 13px;
+    color: var(--white-color);
+}
+
+.admission_content_campus ul li {
+    margin-bottom: -10px;
+}
+
+.admission_content_campus p {
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.custom_campus {
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 20px;
+    transition: all .3s linear;
+}
+
+.admission_content_heading h3,
+.admission_content_social_info h3 {
+    font-size: 20px;
+}
+
+.admission_content_social_info .footer_icon {
+    margin: 10px 0px;
+}
+
+.calender_leftside_content embed {
+    width: 100% !important;
+    height: 750px !important;
+}
+
+.calender_right_side {
+    background-color: var(--blue-color);
+}
+
+/*==================================
+    Academic calnder page end
+====================================*/
+
+.top_bref_step p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.custom_bref_step {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--black-color);
+    padding-right: 10px;
+}
+
+.addmission_procedure_table .table {
+    --bs-table-border-color: var(--blue-color);
+}
+
+/*====================================
+    Addmission procedure section start
+====================================*/
+
+
+
+/*====================================
+    Addmission procedure section end
+====================================*/
+
+/*============================
+   Apply page start
+==============================*/
+.download_form_lft {
+    padding: 30px 0px;
+    border-right: 1px solid var(--blue-color);
+    transition: all .3s linear;
+}
+
+.download_form_lft:hover {
+    border: none;
+}
+
+.download_form_lft h3,
+.download_form_right h3 {
+    color: var(--blue-color);
+}
+
+.download_button i {
+    padding-right: 5px;
+}
+
+.download_button .cmn_btn_hov:hover {
+    background-color: var(--black-color);
+}
+
+.online_payment_step {
+    margin: 30px 0px;
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.online_payment_step .singel_line p {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.online_payment_info_box .online_payment_info {
+    margin: 18px 0px;
+}
+
+.online_payment_info_box .step_count h3 {
+    font-size: 45px;
+    color: var(--blue-color);
+    margin: 5px 33px 0px 7px;
+}
+
+.online_payment_info_box .online_payment_info h2 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.online_payment_info ol {
+    list-style: show;
+    margin-left: 30px;
+}
+
+.payment_procedure {
+    margin: 30px 0px;
+}
+
+.payment_procedure h3 {
+    font-size: 25px;
+    color: var(--blue-color);
+}
+
+.payment_procedure_step li {
+    padding: 20px 0px;
+}
+
+.online_payment_info ol li p {
+    font-size: 16px;
+}
+
+.online_payment_info_box {
+    display: flex;
+}
+
+.acount_information {
+    display: flex;
+}
+
+.acount_information .account_info_icon {
+    margin-right: 20px;
+}
+
+.acount_information .account_info_icon i {
+    color: var(--blue-color);
+}
+
+.account_info_content {
+    margin-top: 10px;
+}
+
+.account_info_content p {
+    line-height: 0.5;
+    font-size: 17px;
+}
+
+.account_info_content .acount_info {
+    margin-left: 20px;
+}
+
+.applay_section_process_right {
+    margin: 30px 0px;
+}
+
+.apply_sec_common_head h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--blue-color);
+}
+
+.addmission_office_address {
+    margin-top: 20px;
+}
+
+.addmission_office_address p {
+    line-height: 0.9;
+    font-size: 17px;
+}
+
+.apply_sec_title_pera {
+    margin: 30px 0px;
+}
+
+.addmission_office_cmn_pera {
+    margin: 20px 0px;
+}
+
+/*============================
+   Apply page end
+==============================*/
+
+/* ===========================
+ Payment page start
+=============================*/
+
+.payment_maincontent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.payment_maincontent_img {
+    text-align: center;
+}
+
+.payment_content_description {
+    margin: 20px 0px;
+}
+
+.payment_content_description h4 {
+    font-size: 24px;
+    color: var(--blue-color);
+    font-weight: 600;
+}
+
+.payment_content_description h5 {
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.payment_content_description p {
+    font-size: 28px;
+    color: red;
+    font-weight: 600;
+}
+
+.tutorial_btn {
+    text-align: center;
+    margin: 10px;
+}
+
+.pay_now {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--white-color) !important;
+    background-color: var(--blue-color) !important;
+}
+
+.tutorial_shape {
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: var(--blue-color);
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 2px solid var(--blue-color);
+    transition: all .3s linear;
+    color: var(--white-color);
+}
+
+.tutorial_shape:hover {
+    background-color: var(--white-color);
+    color: var(--blue-color);
+}
+
+/* ============================
+payment page end
+=============================*/
+
+/* ============================
+Online addmission page start
+===============================*/
+.focusable_text {
+    text-align: center;
+}
+
+.focusable_text p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin-bottom: 30px;
+}
+
+
+.online_addmission_form_wrapper {
+    border: 1px solid var(--blue-color);
+}
+
+.cmn_form_title {
+    background-color: var(--blue-color);
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+}
+
+.cmn_form_title h5 {
+    font-size: 20px;
+    color: var(--white-color);
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+.content_padding {
+    margin: 0px 35px;
+}
+
+.submit_btn {
+    background-color: var(--blue-color) !important;
+    padding: 10px 15px !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content_padding input[type="checkbox"] {
+    opacity: 1 !important;
+    z-index: 1;
+    margin-left: -22px !important;
+
+}
+
+
+/* ========================
+Online addmission page End
+============================ */
+
+/* ===========================
+    Fees page start
+=============================*/
+.fees_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 400px !important;
+    margin-bottom: 40px;
+    background-repeat: no-repeat !important;
+}
+
+/* ===========================
+    Fees page End
+=============================*/
+
+/* ===========================
+    Achivement page start
+=============================*/
+#hero_section_overlay {
+    margin-left: 60px;
+}
+
+.achivement_wrap {
+    margin: 20px 10px;
+    position: relative;
+    transition: transform .3s linear;
+}
+
+.achivement_wrap:hover {
+    transform: scale(1.1);
+}
+
+.achivement_wrap:hover .achivement_wrap_overlay {
+    visibility: visible;
+}
+
+.achivement_wrap_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 1;
+    transition: transform .3s linear;
+    visibility: hidden;
+}
+
+.achivement_wrap_overlay p {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 80%;
+    z-index: 2;
+}
+
+/* ===========================
+    Achivement page end
+=============================*/
+
+/* ===========================
+    Notices page start
+=============================*/
+
+.notice_box {
+    margin: 15px 5px;
+}
+
+.card_custom_border {
+    border: 1px solid var(--blue-color);
+}
+
+.custom_card_title {
+    color: var(--black-color);
+    margin: 10px 0px;
+}
+
+.custom_card_title:hover {
+    color: var(--blue-color);
+}
+
+.custom_card_text {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.card_custom_button {
+
+    margin: 20px 0px 20px 15px;
+}
+
+.card_custom_button a {
+    background-color: var(--blue-color) !important;
+
+}
+
+.card_footer_content span i {
+
+    margin-right: 5px;
+    color: var(--blue-color);
+}
+
+.card_footer_content span {
+    margin: 10px;
+}
+
+.custom_pagination {
+    margin: 30px 0px;
+}
+
+/* ===========================
+    Notices page end
+=============================*/
+
+/* =======================================
+    Lighthouse cmn page start/ transport
+==========================================*/
+.lighthouse_cmn_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 400px !important;
+    margin-bottom: 40px;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: -1;
+}
+
+.lighthouse_cmn_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.lighthouse_cmn_overlay h2 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    font-size: 45px;
+    font-weight: 600;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.lighthouse_cmn_left {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.lighthouse_cmn_left li a {
+    width: 100%;
+    background: #f7f7f7;
+    color: var(--black-color);
+    padding: 15px 0px 15px 15px;
+    border: 1px solid #e6e7eb;
+    border-left: 1px solid var(--white-color);
+    transform: transition all .3s linear;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.lighthouse_cmn_left li a:hover {
+    color: var(--blue-color);
+}
+
+.lighthouse_cmn_right {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ========================================
+    Lighthouse cmn page end/transport
+===========================================*/
+
+/* ========================================
+    iellts banner start
+===========================================*/
+.ielts_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 90vh !important;
+    margin-bottom: 40px;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+.ielts_banner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.ielts_banner_contet {
+    position: absolute;
+    top: 50%;
+    z-index: 99999;
+    margin-top: -100px;
+}
+
+.ielts_banner_title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--white-color);
+}
+
+.ielts_banner_subtitle p {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.ielts_btn {
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transform: transition all .3s linear;
+    margin-right: 15px;
+}
+
+.ielts_btn:hover {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.ielts_programme_title h4 {
+    font-size: 40px;
+    color: var(--blue-color);
+    font-size: 800;
+}
+
+.ielts_programme_pera p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.ielts_program_content {
+    margin: 30px 0px;
+}
+
+.ielts_middle_banner {
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 500px !important;
+    margin-bottom: 40px;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+.banner_box_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 99999;
+    background-color: var(--blue-color);
+}
+
+.ielts_middle_banner_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+}
+
+.ielts_middle_banner_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ielts_middle_banner_box {
+    background-color: var(--blue-color);
+
+}
+
+.ielts_middle_banner_title p {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 30px 100px;
+}
+
+.ielts_card {
+    background-color: #ecf0f1;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.ielts_card_image img {
+    border-radius: 5px;
+}
+
+.ielts_card_title p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
+.ielts_card_pera p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-top: 20px;
+    margin: 15px 0px;
+}
+
+.ielts_card_section {
+    margin: 100px 0px;
+}
+
+.ielts_regular_title h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin: 20px 0px;
+}
+
+.ielts_regular_subtitle p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+.ielts_regular_btn {
+    margin: 20px 0px;
+}
+
+.ielts_regular_left {
+    margin: 50px 0px;
+}
+
+.ielts_regular_section {
+    margin: 50px 0px;
+}
+
+.success_card {
+    padding: 15px 20px;
+    text-align: justify;
+}
+
+.success_card_title h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.success_card_pera {
+    padding: 20px 0px;
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.success_card_pera2 {
+    text-align: center;
+}
+
+.success_card_btn {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* ========================================
+    iellts banner end
+===========================================*/
+
+/* ========================================
+    Summer camp pages start
+===========================================*/
+.summer_camp_front_design {
+    margin: 50px;
+}
+
+.summer_camp_rlt_design {
+    margin: 50px 0px;
+}
+
+.summer_camp_image img {
+    border-radius: 10px;
+}
+
+.summer_camp_content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.summer_camp_content p {
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.summer_camp_body {
+    margin: 50px 0px;
+}
+
+.summer_camp_btn {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.element_spacer {
+    width: 100%;
+    background-color: var(--blue-color);
+    height: 60px;
+}
+
+/* ========================================
+    Summer camp pages end
+===========================================*/
+
+/* ========================================
+    campus details start
+===========================================*/
+.facilities_unique_pera ul li {
+    list-style: show;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.facilities_unique_pera ul li p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.facilities_unique_pera {
+    margin: 30px 0px;
+}
+
+.facilities_cmn_pera h3 {
+    font-size: 25px;
+    color: var(--blue-color);
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.facilities_cmn_pera p {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+/* ========================================
+    campus details end
+===========================================*/
+
+/* ========================================
+    contact page start
+===========================================*/
+.contact_us_body {
+    background-color: var(--black-color) !important;
+}
+
+/* .contuct_overlay {
+    left: 10%;
+} */
+
+.contact_content {
+    padding: 100px 0px;
+}
+
+.location_map iframe {
+    height: 380px;
+    width: 100%;
+}
+
+.address_location h3 {
+    padding-bottom: 20px;
+}
+
+.contuct_us_section {
+    margin-top: 20px 0px;
+}
+
+.address_location p {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.address_location a {
+    color: var(--blue-color);
+}
+
+.address_location i {
+    margin-right: 15px;
+    color: var(--white-color);
+}
+
+/* ========================================
+    contact page end
+===========================================*/
+
+/* ========================================
+    Login page design start
+===========================================*/
+.login_body {
+    position: relative;
+    height: 100vh;
+}
+
+.login_card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login_card_title {
+    text-align: center;
+}
+
+.sign_in_btn {
+    width: 100%;
+    background-color: var(--blue-color);
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.defualt_text {
+    text-align: center;
+}
+
+.defualt_text p {
+    font-size: 20px;
+    color: var(--blue-color);
+    margin: 20px 0px;
+}
+
+.sign_in_google img {
+    height: 80px;
+    width: 350px;
+}
+
+.login_general_text {
+    margin: 20px 0px;
+}
+
+.login_general_text p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ========================================
+    Login page design end
+===========================================*/
+
+
+/* again add new css start */
+.addmission_procedure_top {
+    padding-right: 80px;
+}
+
+.policy_cmn_image img {
+    margin: 20px 0px;
+}
+
+/* again admission css end */
+
+/* custom */
+.campus_details_body h3
+{
+    color: black;
+}
+
+#summer_camp .image img{
+    width: 100% !important;
+}
+#winter_camp .image img{
+    width: 100% !important;
+}
+#winter_camp .image img{
+    width: 100% !important;
+}
+
+#notice_body {
+    height: 11rem !important;
+    overflow: hidden !important;
+}
+
+.fees_body_img figure img{
+    width: 100% !important;
+}
+.payment_maincontent_img h3{
+    color: var(--blue-color);
+}

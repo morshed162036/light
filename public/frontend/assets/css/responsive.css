@@ -1,0 +1,2075 @@
+/* Mobile s */
+@media only screen and (max-width: 374px) and (min-width: 320px) {
+
+    /* new css add start */
+
+    #custom_image {
+        margin: 0px;
+        margin-top: 0px;
+    }
+
+    .copywrite_text {
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .addmission_procedure_top {
+        padding-right: 0px;
+    }
+
+    .fees_banner {
+        height: 200px !important;
+    }
+
+    .payment_content_description p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .payment_content_description h4 {
+        text-align: center;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .ielts_programme_title h4 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .cmn_btn_hov {
+        padding: 18px 10px !important;
+    }
+
+    .tab_button_area ul li button {
+        margin-right: 1px;
+    }
+
+    .tab_content_area {
+        margin-top: 90px;
+    }
+
+    .mixitup_single_image img {
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    /* new css add end */
+
+    .admission_content_campus p,
+    .custom_campus {
+        font-size: 14px;
+    }
+
+    .calender_right_side {
+        margin-bottom: 20px;
+    }
+
+    .box_btn {
+        font-size: 13px;
+    }
+
+    .top_head_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .btn_sec {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cmn_btn {
+        padding: 10px 35px;
+        border-radius: 50px;
+        margin-left: 3px;
+        font-size: 11px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        display: none;
+    }
+
+    .top_head_button {
+        padding: 10px 0px;
+    }
+
+    .top_logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_head_button {
+        width: 100%;
+    }
+
+    .top_social_icon {
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offcanvas-header .btn-close {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .reminder {
+        bottom: 0px;
+        left: 75px;
+        width: 230px;
+    }
+
+    .reminder_body {
+        margin: 0px 20px;
+    }
+
+    .countdown_number {
+        font-size: 20px;
+    }
+
+    .reminder_header h2,
+    .reminder_footer h2 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    /* banner sectio responsive start */
+
+    .banner_left_container {
+        margin-top: 40px;
+    }
+
+    .banner_middle_text h2 {
+        font-size: 32px;
+    }
+
+    .banner_rating {
+        margin-right: 0px;
+    }
+
+    .button_rating {
+        padding: 2px;
+    }
+
+    .image_wrapper {
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .image_wrapper {
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    .up_image img {
+        max-width: 200px;
+    }
+
+    .down_image img {
+        max-width: 200px;
+    }
+
+    .down_image {
+        top: 25%;
+        left: 45%;
+    }
+
+    .lighthouse_cmn_banner {
+        height: 200px !important;
+    }
+
+    .lighthouse_cmn_overlay {
+        height: 200px !important;
+    }
+
+
+
+
+
+    /* banner section end */
+
+    /* About us start */
+
+    .about_us {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .about_title h2 {
+        margin-top: 20px;
+    }
+
+    .about_heading h2 {
+        font-size: 25px;
+    }
+
+    .about_title,
+    .about_heading {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph p {
+        font-size: 18px;
+    }
+
+    .about_right {
+        padding-left: 0px;
+    }
+
+    .about_right {
+        text-align: center;
+    }
+
+    /* about us end */
+
+    /* Counter section start */
+
+    .counter_heading {
+        padding-top: 20px;
+    }
+
+    .counter_heading {
+        margin-top: 10px;
+    }
+
+    .wrapper_text {
+        bottom: -88px;
+    }
+
+    .wrapbb {
+        margin: 0px 0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .wrapper_text p {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    /* counter section end */
+
+    /* age specific start */
+    .specification_content_text {
+        padding-top: 0px;
+        height: auto;
+    }
+
+    .age_specification_top {
+        padding-bottom: 5px;
+    }
+
+    .age_specification_content {
+        margin: 10px 0px;
+    }
+
+    .auto_height {
+        height: 215px;
+    }
+
+    .age_specification {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .school_table_head h2 {
+        font-size: 18px;
+    }
+
+    .school_table_head {
+        margin: 15px 0px;
+    }
+
+    .school_table_content {
+        margin: 0px 10px;
+    }
+
+    .school_timing_note p {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .school_timing_btn {
+        margin-bottom: 0px;
+    }
+
+    /* age specific end */
+
+    /* news media start */
+    .news_media {
+        margin: 40px 0px;
+    }
+
+    .left_news_media {
+        height: 300px;
+        width: 300px;
+    }
+
+    .media_text {
+        margin: 10px 0px;
+    }
+
+    /* news media end */
+
+    /* CONTUCT US PAGE */
+
+    .hero_section {
+        height: 270px !important;
+    }
+
+    .hero_section_overlay p {
+        top: 35%;
+        left: 30%;
+        transform: translate(-35%, -30%);
+        font-size: 18px;
+    }
+
+    .contact_content {
+        padding: 40px 0px;
+    }
+
+    /* LOGIN PAGE START */
+    .login_body {
+        height: 200vh;
+    }
+
+    .login_card {
+        width: 300PX;
+    }
+
+    /* ABOUT-US PAGE */
+    .mission_title h2 {
+        font-size: 25px;
+    }
+
+    .flipcard {
+        margin: 15px 0px;
+    }
+
+    /* about page */
+    .tab_button_area .nav-link {
+        padding: 20px 6px;
+
+    }
+
+    ul#myTab {
+        top: 0px;
+    }
+
+    .tab_button_area .nav-tabs {
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .nav-item .nav-link,
+    .active {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+
+
+    .tab_button_area .nav-item {
+        /* margin: 3px !important; */
+        margin-right: 5px !important;
+    }
+
+    button#home-tab {
+        background: var(--white-color);
+        margin-left: 3px;
+    }
+
+    .tab_image_text_wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .tab_image {
+        width: 100%;
+    }
+
+    .tab_text {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .principale_massage_title h2 {
+        font-size: 18px;
+    }
+
+
+    .principale_massage_title h2::after {
+        right: 120px;
+    }
+
+    .principale_massage_title h2::before {
+        left: 120px;
+    }
+
+    .principale_image_part {
+        margin-left: 0px;
+    }
+
+    .Principale_massage_section {
+        margin: 0px 0px;
+    }
+
+    .principale_name h3 {
+        font-size: 17px;
+    }
+
+    .principale_name p {
+        font-size: 16px;
+    }
+
+    .principale_speach {
+        margin-top: 30px;
+    }
+
+    .main_teaching_team {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .department_title h2 {
+        font-size: 20px;
+    }
+
+    .top_bref_step p {
+        font-size: 15px;
+    }
+
+    #hero_section_overlay {
+        margin-left: 0px;
+    }
+
+    .hero_section_overlay {
+        height: 270px;
+    }
+
+    .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .achivement_wrap_overlay p {
+        font-size: 16px;
+    }
+
+    .custom_card_text {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+
+    .lighthouse_cmn_left li a {
+        font-size: 18px;
+    }
+
+    .visit_btn {
+        text-align: center;
+    }
+
+    .elemonteory_list {
+        margin-left: 16px;
+    }
+
+    .curriculam_logo_image {
+        width: 86px;
+        margin-left: 95px;
+        margin-bottom: 20px;
+    }
+
+    .event_overlay_text h2 {
+        left: 36%;
+        transform: translate(-50%, -36%);
+    }
+
+    .gallery_inner_title {
+        margin-top: 20px;
+    }
+
+    .gallery_inner_title h3 {
+        font-size: 25px;
+    }
+
+    .event_section_banner {
+        height: 250px !important;
+    }
+
+    .online_payment_step .singel_line p {
+        font-size: 20px;
+    }
+
+    .online_payment_info ol {
+        margin-left: 4px;
+    }
+
+    .account_info_content {
+        margin-top: 0px;
+    }
+
+    .account_info_content p {
+        line-height: 1.5;
+    }
+
+    .content_padding label {
+        display: inline;
+    }
+
+    .cmn_btn_hov {
+        padding: 9px 20px;
+    }
+
+    .curriculam_logo_text {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+}
+
+/* mobile M */
+@media only screen and (max-width: 424px) and (min-width: 375px) {
+
+    /* new css add start */
+
+    #custom_image {
+        margin: 0px;
+        margin-top: 0px;
+    }
+
+    .copywrite_text {
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .addmission_procedure_top {
+        padding-right: 0px;
+    }
+
+    .fees_banner {
+        height: 200px !important;
+    }
+
+    .payment_content_description p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .payment_content_description h4 {
+        text-align: center;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .ielts_programme_title h4 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .cmn_btn_hov {
+        padding: 18px 10px !important;
+    }
+
+    .tab_button_area ul li button {
+        margin-right: 1px;
+    }
+
+    .tab_content_area {
+        margin-top: 90px;
+    }
+
+    .mixitup_single_image img {
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    /* new css add end */
+
+    .admission_content_campus p,
+    .custom_campus {
+        font-size: 14px;
+    }
+
+    .calender_right_side {
+        margin-bottom: 20px;
+    }
+
+    .box_btn {
+        font-size: 13px;
+    }
+
+    .top_head_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .btn_sec {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cmn_btn {
+        padding: 10px 35px;
+        border-radius: 50px;
+        margin-left: 3px;
+        font-size: 11px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        display: none;
+    }
+
+    .top_head_button {
+        padding: 10px 0px;
+    }
+
+    .top_logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_head_button {
+        width: 100%;
+    }
+
+    .top_social_icon {
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offcanvas-header .btn-close {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .reminder {
+        bottom: 0px;
+        left: 145px;
+        width: 230px;
+    }
+
+    .reminder_body {
+        margin: 0px 20px;
+    }
+
+    .countdown_number {
+        font-size: 20px;
+    }
+
+    .reminder_header h2,
+    .reminder_footer h2 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    /* banner sectio responsive start */
+
+    .banner_left_container {
+        margin-top: 40px;
+    }
+
+    .banner_middle_text h2 {
+        font-size: 32px;
+    }
+
+    .banner_rating {
+        margin-right: 0px;
+    }
+
+    .button_rating {
+        padding: 2px;
+    }
+
+    .image_wrapper {
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .image_wrapper {
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    .up_image img {
+        max-width: 200px;
+    }
+
+    .down_image img {
+        max-width: 200px;
+    }
+
+    .down_image {
+        top: 25%;
+        left: 45%;
+    }
+
+    .lighthouse_cmn_banner {
+        height: 200px !important;
+    }
+
+    .lighthouse_cmn_overlay {
+        height: 200px !important;
+    }
+
+    .about_us {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .about_title h2 {
+        margin-top: 20px;
+    }
+
+    .about_heading h2 {
+        font-size: 25px;
+    }
+
+    .about_title,
+    .about_heading {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph p {
+        font-size: 18px;
+    }
+
+    .about_right {
+        padding-left: 0px;
+    }
+
+    .about_right {
+        text-align: center;
+    }
+
+    /* about us end */
+
+    /* Counter section start */
+
+    .counter_heading {
+        padding-top: 20px;
+    }
+
+    .counter_heading {
+        margin-top: 10px;
+    }
+
+    .wrapper_text {
+        bottom: -88px;
+    }
+
+    .wrapbb {
+        margin: 0px 0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .wrapper_text p {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    /* counter section end */
+
+    /* age specific start */
+    .specification_content_text {
+        padding-top: 0px;
+        height: auto;
+    }
+
+    .age_specification_top {
+        padding-bottom: 5px;
+    }
+
+    .age_specification_content {
+        margin: 10px 0px;
+    }
+
+    .auto_height {
+        height: 215px;
+    }
+
+    .age_specification {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .school_table_head h2 {
+        font-size: 18px;
+    }
+
+    .school_table_head {
+        margin: 15px 0px;
+    }
+
+    .school_table_content {
+        margin: 0px 10px;
+    }
+
+    .school_timing_note p {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .school_timing_btn {
+        margin-bottom: 0px;
+    }
+
+    /* age specific end */
+
+    /* news media start */
+    .news_media {
+        margin: 40px 0px;
+    }
+
+    .left_news_media {
+        height: 300px;
+        width: 300px;
+    }
+
+    .media_text {
+        margin: 10px 0px;
+    }
+
+    /* news media end */
+
+    /* CONTUCT US PAGE */
+
+    .hero_section {
+        height: 270px !important;
+    }
+
+    .hero_section_overlay p {
+        top: 35%;
+        left: 30%;
+        transform: translate(-35%, -30%);
+        font-size: 18px;
+    }
+
+    .contact_content {
+        padding: 40px 0px;
+    }
+
+    /* LOGIN PAGE START */
+    .login_body {
+        height: 200vh;
+    }
+
+    .login_card {
+        width: 330PX;
+    }
+
+    /* ABOUT-US PAGE */
+    .mission_title h2 {
+        font-size: 25px;
+    }
+
+    .flipcard {
+        margin: 15px 0px;
+    }
+
+    /* about page */
+    .tab_button_area .nav-link {
+        padding: 20px 6px;
+
+    }
+
+    ul#myTab {
+        top: 0px;
+    }
+
+    .tab_button_area .nav-tabs {
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button#home-tab {
+        background: var(--white-color);
+        margin-left: 3px;
+    }
+
+    .tab_image_text_wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .tab_image {
+        width: 100%;
+    }
+
+    .tab_text {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .principale_massage_title h2 {
+        font-size: 18px;
+    }
+
+
+    .principale_massage_title h2::after {
+        right: 150px;
+    }
+
+    .principale_massage_title h2::before {
+        left: 150px;
+    }
+
+    .principale_image_part {
+        margin-left: 0px;
+    }
+
+    .Principale_massage_section {
+        margin: 0px 0px;
+    }
+
+    .principale_name h3 {
+        font-size: 17px;
+    }
+
+    .principale_name p {
+        font-size: 16px;
+    }
+
+    .principale_speach {
+        margin-top: 30px;
+    }
+
+    .main_teaching_team {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .department_title h2 {
+        font-size: 20px;
+    }
+
+    .top_bref_step p {
+        font-size: 15px;
+    }
+
+    #hero_section_overlay {
+        margin-left: 0px;
+    }
+
+    .hero_section_overlay {
+        height: 270px;
+    }
+
+    .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .achivement_wrap_overlay p {
+        font-size: 16px;
+    }
+
+    .custom_card_text {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+
+    .lighthouse_cmn_left li a {
+        font-size: 18px;
+    }
+
+    .visit_btn {
+        text-align: center;
+    }
+
+    .elemonteory_list {
+        margin-left: 16px;
+    }
+
+    .curriculam_logo_image {
+        width: 86px;
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    .event_overlay_text h2 {
+        left: 36%;
+        transform: translate(-50%, -36%);
+    }
+
+    .gallery_inner_title {
+        margin-top: 20px;
+    }
+
+    .gallery_inner_title h3 {
+        font-size: 25px;
+    }
+
+    .event_section_banner {
+        height: 250px !important;
+    }
+
+    .online_payment_step .singel_line p {
+        font-size: 20px;
+    }
+
+    .online_payment_info ol {
+        margin-left: 4px;
+    }
+
+    .account_info_content {
+        margin-top: 0px;
+    }
+
+    .account_info_content p {
+        line-height: 1.5;
+    }
+
+    .content_padding label {
+        display: inline;
+    }
+
+    .cmn_btn_hov {
+        padding: 18px 20px;
+    }
+
+    .curriculam_logo_text {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+}
+
+/* mobile L device */
+@media only screen and (max-width: 767px) and (min-width: 425px) {
+
+    /* new css add start */
+    #custom_image {
+        margin: 0px;
+        margin-top: 0px;
+    }
+
+    .copywrite_text {
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .addmission_procedure_top {
+        padding-right: 0px;
+    }
+
+    .fees_banner {
+        height: 200px !important;
+    }
+
+    .payment_content_description p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .payment_content_description h4 {
+        text-align: center;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .ielts_programme_title h4 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .ielts_banner_title h2 {
+        font-size: 20px;
+    }
+
+    .ielts_banner_subtitle p {
+        font-size: 18px;
+    }
+
+    .ielts_btn {
+        background-color: var(--blue-color);
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .tab_button_area ul li button {
+        margin-right: 1px;
+    }
+
+    .tab_content_area {
+        margin-top: 90px;
+    }
+
+    .mixitup_single_image img {
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    /* new css add end */
+
+    .admission_content_campus p,
+    .custom_campus {
+        font-size: 14px;
+    }
+
+    .calender_right_side {
+        margin-bottom: 20px;
+    }
+
+    .box_btn {
+        font-size: 13px;
+    }
+
+    .top_head_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .btn_sec {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cmn_btn {
+        padding: 10px 35px;
+        border-radius: 50px;
+        margin-left: 3px;
+        font-size: 11px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        display: none;
+    }
+
+    .top_head_button {
+        padding: 10px 0px;
+    }
+
+    .top_logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_head_button {
+        width: 100%;
+    }
+
+    .top_social_icon {
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offcanvas-header .btn-close {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .reminder {
+        bottom: 0px;
+        left: 195px;
+        width: 230px;
+    }
+
+    .reminder_body {
+        margin: 0px 20px;
+    }
+
+    .countdown_number {
+        font-size: 20px;
+    }
+
+    .reminder_header h2,
+    .reminder_footer h2 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    /* banner sectio responsive start */
+
+    .banner_left_container {
+        margin-top: 40px;
+    }
+
+    .banner_middle_text h2 {
+        font-size: 32px;
+    }
+
+    .banner_rating {
+        margin-right: 0px;
+    }
+
+    .button_rating {
+        padding: 2px;
+    }
+
+    .image_wrapper {
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    .image_wrapper {
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    .up_image img {
+        max-width: 200px;
+    }
+
+    .down_image img {
+        max-width: 200px;
+    }
+
+    .down_image {
+        top: 25%;
+        left: 45%;
+    }
+
+    /* banner section end */
+
+    /* About us start */
+
+    .about_us {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .about_title h2 {
+        margin-top: 20px;
+    }
+
+    .about_heading h2 {
+        font-size: 25px;
+    }
+
+    .about_title,
+    .about_heading {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph {
+        margin-bottom: 10px;
+    }
+
+    .about_peragraph p {
+        font-size: 18px;
+    }
+
+    .about_right {
+        padding-left: 0px;
+    }
+
+    .about_right {
+        text-align: center;
+    }
+
+    /* about us end */
+
+    /* Counter section start */
+
+    .counter_heading {
+        padding-top: 20px;
+    }
+
+    .counter_heading {
+        margin-top: 10px;
+    }
+
+    .wrapper_text {
+        bottom: -88px;
+    }
+
+    .wrapbb {
+        margin: 0px 0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .wrapper_text p {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    /* counter section end */
+
+    /* age specific start */
+    .specification_content_text {
+        padding-top: 0px;
+        height: auto;
+    }
+
+    .age_specification_top {
+        padding-bottom: 5px;
+    }
+
+    .age_specification_content {
+        margin: 10px 0px;
+    }
+
+    .auto_height {
+        height: 250px;
+    }
+
+    .age_specification {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .school_table_head h2 {
+        font-size: 18px;
+    }
+
+    .school_table_head {
+        margin: 15px 0px;
+    }
+
+    .school_table_content {
+        margin: 0px 10px;
+    }
+
+    .school_timing_note p {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .school_timing_btn {
+        margin-bottom: 0px;
+    }
+
+    /* age specific end */
+
+    /* news media start */
+    .news_media {
+        margin: 40px 0px;
+    }
+
+    .left_news_media {
+        height: 300px;
+        width: 300px;
+    }
+
+    .media_text {
+        margin: 10px 0px;
+    }
+
+    /* news media end */
+
+    /* CONTUCT US PAGE */
+
+    .hero_section {
+        height: 270px !important;
+    }
+
+    .hero_section_overlay p {
+        top: 35%;
+        left: 30%;
+        transform: translate(-35%, -30%);
+        font-size: 18px;
+    }
+
+    .contact_content {
+        padding: 40px 0px;
+    }
+
+    /* LOGIN PAGE START */
+    .login_body {
+        height: 200vh;
+    }
+
+    .login_card {
+        width: 330PX;
+    }
+
+    /* ABOUT-US PAGE */
+    .mission_title h2 {
+        font-size: 25px;
+    }
+
+    .flipcard {
+        margin: 15px 0px;
+    }
+
+    /* about page */
+    .tab_button_area .nav-link {
+        padding: 20px 6px;
+
+    }
+
+    ul#myTab {
+        top: 0px;
+    }
+
+    .tab_button_area .nav-tabs {
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button#home-tab {
+        background: var(--white-color);
+        margin-left: 3px;
+    }
+
+    .tab_image_text_wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .tab_image {
+        width: 100%;
+    }
+
+    .tab_text {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .principale_massage_title h2 {
+        font-size: 17px;
+    }
+
+
+    .principale_massage_title h2::after {
+        right: 180px;
+    }
+
+    .principale_massage_title h2::before {
+        left: 170px;
+    }
+
+    .principale_image_part {
+        margin-left: 0px;
+    }
+
+    .Principale_massage_section {
+        margin: 0px 0px;
+    }
+
+    .principale_name h3 {
+        font-size: 17px;
+    }
+
+    .principale_name p {
+        font-size: 16px;
+    }
+
+    .principale_speach {
+        margin-top: 30px;
+    }
+
+    .main_teaching_team {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .department_title h2 {
+        font-size: 20px;
+    }
+
+    .top_bref_step p {
+        font-size: 15px;
+    }
+
+    #hero_section_overlay {
+        margin-left: 0px;
+    }
+
+    .hero_section_overlay {
+        height: 270px;
+    }
+
+    .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .achivement_wrap_overlay p {
+        font-size: 16px;
+    }
+
+    .custom_card_text {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+
+    .lighthouse_cmn_left li a {
+        font-size: 18px;
+    }
+
+    .visit_btn {
+        text-align: center;
+    }
+
+    .elemonteory_list {
+        margin-left: 16px;
+    }
+
+    .curriculam_logo_image {
+        width: 86px;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+
+    .event_overlay_text h2 {
+        left: 36%;
+        transform: translate(-50%, -36%);
+    }
+
+    .gallery_inner_title {
+        margin-top: 20px;
+    }
+
+    .gallery_inner_title h3 {
+        font-size: 25px;
+    }
+
+    .event_section_banner {
+        height: 250px !important;
+    }
+
+    .online_payment_step .singel_line p {
+        font-size: 20px;
+    }
+
+    .online_payment_info ol {
+        margin-left: 4px;
+    }
+
+    .account_info_content {
+        margin-top: 0px;
+    }
+
+    .account_info_content p {
+        line-height: 1.5;
+    }
+
+    .content_padding label {
+        display: inline;
+    }
+
+    .cmn_btn_hov {
+        padding: 18px 20px;
+    }
+
+    .curriculam_logo_text {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .lighthouse_cmn_banner {
+        height: 200px !important;
+    }
+
+    .lighthouse_cmn_overlay {
+        height: 200px !important;
+    }
+}
+
+
+/* Tab devices */
+@media only screen and (max-width: 1198px ) and (min-width: 768px) {
+    .top_logo {
+        width: 30%;
+    }
+
+    .top_head_button {
+        width: 40%;
+    }
+
+    .top_social_icon {
+        width: 20%;
+    }
+
+    .btn_sec {
+        justify-content: flex-end;
+    }
+
+    button.navbar-toggler {
+        display: none !important;
+    }
+
+    .image_wrapper {
+        margin-top: 10px;
+    }
+
+    .about_heading h2 {
+        font-size: 28px;
+    }
+
+    .aboutus_btn {
+        text-align: center;
+    }
+
+    .counter_sec span {
+        font-size: 20px;
+    }
+
+    .wrapper_text {
+        bottom: -70px;
+    }
+
+    .wrapbb {
+        margin: 30px 0px;
+    }
+
+    .wrapper_text p {
+        font-size: 25px;
+    }
+
+    .auto_height {
+        height: 470px;
+    }
+
+    .specification_content_text {
+        height: auto;
+    }
+
+    .age_specification_content {
+        margin: 30px;
+    }
+
+    .form_box {
+        margin-left: 25px;
+    }
+
+    .footer_icon {
+        text-align: center;
+    }
+
+    .copywrite_text p {
+        font-size: 15px;
+    }
+
+    .footer_condiion {
+        font-size: 15px;
+    }
+
+    .flipcard {
+        margin: 30px 0px;
+    }
+
+    .principale_massage_title h2::before {
+        left: 320px;
+    }
+
+    .principale_massage_title h2::after {
+        right: 320px;
+    }
+
+    .fees_banner {
+        height: 300px !important;
+    }
+
+    .event_section_banner {
+        height: 300px !important;
+    }
+
+    .event_overlay_text h2 {
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+
+    button#home-tab {
+        margin-left: 0px;
+    }
+
+    ul#myTab {
+        position: absolute;
+        top: 0px;
+    }
+
+    .tab_button_area .nav-item {
+        font-size: 12px;
+    }
+
+    #custom_image {
+        margin: 40px;
+        margin-top: 600px;
+    }
+
+    .tab_text {
+        margin-top: 40px;
+    }
+
+    .principale_image_part {
+        /* margin-left: 60px; */
+        text-align: center;
+    }
+
+    .main_teaching_team {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .calender_right_side {
+        margin: 60px;
+    }
+
+    .admission_content_social_info .footer_icon{
+        text-align: justify;
+    }
+
+    #hero_section_overlay {
+        margin-left: 0px;
+    }
+
+    .lighthouse_cmn_banner {
+        height: 300px !important;
+    }
+    .lighthouse_cmn_overlay {
+        height: 300px;
+    }
+
+    .login_body {
+        height: 800px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+    /* new css add */
+    .mixitup_single_image img {
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    /* new  css end*/
+
+    .school_logo img {
+        height: 100px;
+        width: 250px;
+    }
+
+    .cmn_btn {
+        font-size: 12px;
+    }
+
+    .top_logo {
+        width: 60%;
+        padding: 20px 0px;
+    }
+
+    .top_head_button {
+        width: 20%;
+    }
+
+
+    .top_social_icon {
+        padding: 50px 0px;
+        width: 20%;
+    }
+
+    .banner_rating {
+        margin-right: -32px;
+        padding-top: 13px;
+    }
+
+    .about_heading h2 {
+        font-size: 25px;
+    }
+
+    .nav-item {
+        margin-right: 8px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 10px;
+    }
+
+    .image_wrapper {
+        margin-top: 93px;
+        margin-left: 40px;
+    }
+
+    .up_image img {
+        max-width: 270px;
+    }
+
+    .down_image {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+    }
+
+    .down_image img {
+        max-width: 270px;
+    }
+
+    .banner_middle_text h2 {
+        font-size: 48px;
+    }
+
+    .auto_height {
+        height: 150px;
+    }
+
+    .specification_content_text h2 {
+        font-size: 15px;
+    }
+
+    .specification_content_text {
+        margin: 0px 10px;
+        height: auto
+    }
+
+    .left_news_media {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero_section_overlay p {
+        top: 50%;
+        left: 30%;
+    }
+
+    .hero_section_overlay p {
+        left: 30%;
+    }
+
+    .principale_massage_title h2::before {
+        left: 450px;
+    }
+
+    .principale_massage_title h2::after {
+        right: 430px;
+    }
+
+    .login_body {
+        position: relative;
+        height: 190vh;
+    }
+
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+
+    /* new css add */
+    .mixitup_single_image img {
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    /* new  css end */
+
+    .school_logo img {
+        height: 100px;
+        width: 250px;
+    }
+
+    .cmn_btn {
+        font-size: 12px;
+    }
+
+    .top_logo {
+        width: 60%;
+        padding: 20px 0px;
+    }
+
+    .top_head_button {
+        width: 20%;
+    }
+
+
+    .top_social_icon {
+        padding: 50px 0px;
+        width: 20%;
+    }
+
+    .banner_rating {
+        margin-right: -32px;
+        padding-top: 13px;
+    }
+
+    .about_heading h2 {
+        font-size: 25px;
+    }
+
+    .nav-item {
+        margin-right: 8px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+
+    .image_wrapper {
+        margin-top: 93px;
+        margin-left: 40px;
+    }
+
+    .up_image img {
+        max-width: 270px;
+    }
+
+    .down_image {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+    }
+
+    .down_image img {
+        max-width: 270px;
+    }
+
+    .banner_middle_text h2 {
+        font-size: 48px;
+    }
+
+    .auto_height {
+        height: 200px;
+    }
+
+    .specification_content_text h2 {
+        font-size: 15px;
+    }
+
+    .specification_content_text {
+        margin: 0px 10px;
+        height: auto
+    }
+
+    .left_news_media {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero_section_overlay p {
+        top: 50%;
+        left: 30%;
+    }
+
+    .hero_section_overlay p {
+        left: 30%;
+    }
+
+    .principale_massage_title h2::before {
+        left: 450px;
+    }
+
+    .principale_massage_title h2::after {
+        right: 430px;
+    }
+
+    .login_body {
+        position: relative;
+        height: 190vh;
+    }
+
+}
